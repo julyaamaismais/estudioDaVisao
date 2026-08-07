@@ -12,7 +12,12 @@ document.addEventListener("DOMContentLoaded,() =>{
 
     btnContraste.addEventListener("click",() ) =>{
 
-    document.body.
+    document.body.classList.toogle("alto-contraste");
+
+    //acessibilidade para leitores de tela
+
+    const ativas = document.body.classList.contains("alto-contrastes");
+    btnContrast.setAttibute("aria-pressed",ativo);
 
     )
 }
