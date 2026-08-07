@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurobiologia Ocular & A Diversidade da Visão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                👁️ BioVisão
+            </div>
+            <ul class="nav-links">
+                <li><a href="#fundamentos">Fundamentos</a></li>
+                <li><a href="#diversidade">Reino Animal</a></li>
+                <li><a href="#daltonismo">Daltonismo</a></li>
+                <li><a href="#acromatopsia">Acromatopsia</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                🌙 Modos
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <span class="badge">Neurobiologia & Evolução</span>
+        <h1>Fundamentos e Diversidade da Visão Ocular</h1>
+        <p>Uma jornada científica sobre como fótons transformam-se em percepções visuais complexas, desde a óptica animal até as variações na genética humana.</p>
+    </section>
+
+    <div class="container">
+
+        <section id="fundamentos" class="section">
+            <div class="section-header">
+                <h2>1. Fundamentos da Neurobiologia Ocular</h2>
+                <p>A conversão da energia luminosa em impulsos elétricos através do processo de fototransdução.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-icon">🌙</div>
+                    <h3>Bastonetes</h3>
+                    <p><strong>Especialidade:</strong> Visão escotópica (noturna), sensibilidade ao contraste e detecção de movimento.</p>
+                    <ul>
+                        <li><strong>Sensibilidade:</strong> Alta sensibilidade à luz.</li>
+                        <li><strong>Discriminação Cromática:</strong> Nula (não diferenciam cores).</li>
+                        <li><strong>Fotopigmento:</strong> Rhodopsina.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">☀️</div>
+                    <h3>Cones</h3>
+                    <p><strong>Especialidade:</strong> Visão fotópica (diurna), alta acuidade visual e detecção de cores.</p>
+                    <ul>
+                        <li><strong>Sensibilidade:</strong> Exigem alto limiar de iluminação.</li>
+                        <li><strong>Discriminação Cromática:</strong> Alta percepção cromática.</li>
+                        <li><strong>Fotopigmento:</strong> Opsinas ajustadas a faixas específicas do espectro.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="diversidade" class="section">
+            <div class="section-header">
+                <h2>2. A Diversidade Visual no Reino Animal</h2>
+                <p>Como a evolução moldou a contagem e sensibilidade dos fotorreceptores para a sobrevivência das espécies.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-icon">🐕</div>
+                    <h3>2.1 Visão Dicromática (Mamíferos)</h3>
+                    <p>Presente em canídeos, felídeos, equinos e bovinos. Estruturada com apenas dois tipos de cones.</p>
+                    <ul>
+                        <li><strong>Espectro:</strong> Sensível ao azul e amarelo. Incapaz de diferenciar tons de verde e vermelho.</li>
+                        <li><strong>Compensação:</strong> Alta densidade de bastonetes e presença de <em>Tapetum Lucidum</em> (camada reflexiva na retina para penumbra).</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🦅</div>
+                    <h3>2.2 Tetracromacia & UV (Aves e Insetos)</h3>
+                    <p>Possuem 4 ou mais tipos de cones, estendendo a visão para a luz ultravioleta (300 nm a 400 nm).</p>
+                    <ul>
+                        <li><strong>Aves:</strong> Identificam plumagens, rastreiam presas via marcas de urina e acham frutos maduros.</li>
+                        <li><strong>Insetos:</strong> Flores possuem "guias de néctar" UV visíveis para polinizadores (como abelhas).</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🐍</div>
+                    <h3>2.3 Visão Térmica (Ofídios)</h3>
+                    <p>Presente em serpentes das famílias Viperidae, Boidae e Pythonidae combinando visão ocular e sensores térmicos.</p>
+                    <ul>
+                        <li><strong>Órgãos:</strong> Fossetas loreais ou labiais.</li>
+                        <li><strong>Receptores:</strong> Canais TRPA1 sensíveis ao infravermelho de onda longa (calor), gerando imagens 3D de presas na escuridão.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🦐</div>
+                    <h3>2.4 Policromacia Extrema (Stomatopoda)</h3>
+                    <p>O camarão-louva-a-deus (tamarutaca) possui o sistema visual mais complexo catalogado pela ciência.</p>
+                    <ul>
+                        <li><strong>Fotorreceptores:</strong> 12 a 16 tipos diferentes.</li>
+                        <li><strong>Capacidades:</strong> Detecta luz visível (8), UV (4) e luz polarizada linear e circular.</li>
+                        <li><strong>Processamento:</strong> Descentralizado nos próprios olhos antes do gânglio óptico.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="daltonismo" class="section">
+            <div class="section-header">
+                <h2>3. Anomalias da Visão Humana: Daltonismo</h2>
+                <p>Discromatopsias resultantes de alterações genéticas nos cones primários (Tricromacia Humana: S-Azul, M-Verde, L-Vermelho).</p>
+            </div>
+
+            <div class="highlight-box">
+                <h4>Genética Ligada ao Sexo</h4>
+                <p>Os genes responsáveis pela codificação dos fotopigmentos vermelho e verde (<strong>OPN1LW</strong> e <strong>OPN1MW</strong>) estão localizados no <strong>Cromossomo X</strong>. Por essa razão, a transmissão afeta majoritariamente indivíduos do sexo masculino.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Condição</th>
+                            <th>Alteração Molecular / Biológica</th>
+                            <th>Impacto na Percepção Visual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag tag-red">Protanopia</span></td>
+                            <td>Ausência total dos cones L (sensíveis ao vermelho).</td>
+                            <td>Dificuldade de distinguir vermelho de verde; tons vermelhos aparecem escuros ou amarelados.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag tag-green">Deuteranopia</span></td>
+                            <td>Ausência total dos cones M (sensíveis ao verde). Forma mais comum.</td>
+                            <td>Dificuldade em diferenciar verde de vermelho; o verde transita para o bege/amarelo.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag tag-blue">Tritanopia</span></td>
+                            <td>Ausência total dos cones S (azul). Condição rara e não ligada ao sexo.</td>
+                            <td>Azul é confundido com verde, e o amarelo com rosa ou violeta.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag tag-amber">Protanomalia / Deuteranomalia</span></td>
+                            <td>Presença de todos os cones, mas com desvio na sensibilidade espectral das opsinas.</td>
+                            <td>Forma moderada; cores são percebidas, porém com alterações de tonalidade.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="acromatopsia" class="section">
+            <div class="section-header">
+                <h2>4. Monocromia e Acromatopsia</h2>
+                <p>Processamento do ambiente por meio de apenas um único canal visual, eliminando o contraste de cores.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-icon">🏥</div>
+                    <h3>Acromatopsia Congênita Humana</h3>
+                    <p>Patologia autossômica recessiva rara caracterizada pela ausência funcional completa dos três tipos de cones (<em>Monocromia de Bastonetes</em>).</p>
+                    <ul>
+                        <li><strong>Visão:</strong> Estritamente em tons de cinza, preto e branco.</li>
+                        <li><strong>Fotofobia Severa:</strong> Luz do dia causa saturação dos bastonetes e cegueira temporária.</li>
+                        <li><strong>Baixa Acuidade & Nistagmo:</strong> Redução drástica da nitidez central e movimentos oculares involuntários.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🐋</div>
+                    <h3>Monocromia Adaptativa Animal</h3>
+                    <p>Solução evolutiva otimizada para ecossistemas e nichos ecológicos específicos.</p>
+                    <ul>
+                        <li><strong>Cetáceos & Pinnípedes:</strong> Perderam cones para ondas curtas por viverem em águas profundas, onde apenas luz azul-esverdeada penetra.</li>
+                        <li><strong>Espécies Noturnas:</strong> O macaco-da-noite (<em>Aotus</em>) possui retina composta quase que totalmente por bastonetes para captar o máximo de fótons.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="highlight-box" style="border-left-color: var(--primary-color);">
+                <h4>5. Considerações Finais</h4>
+                <p>A visão não é uma representação idêntica da realidade objetiva, mas sim uma <strong>reconstrução neurológica</strong> moldada pelas restrições genéticas e pelas pressões ecológicas enfrentadas por cada organismo. O estudo da visão animal e das variações humanas demonstra que os limites do espectro visível humano são apenas uma pequena fração do espectro eletromagnético utilizado pela vida na Terra.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; Neurobiologia Ocular & Diversidade Visual — Conteúdo Educacional e Científico.</p>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+        
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            if (currentTheme === 'light') {
+                themeToggleBtn.textContent = '☀️ Modo Claro';
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'light') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.textContent = '🌙 Modo Escuro';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.textContent = '☀️ Modo Claro';
+            }
+        });
+    </script>
+</body>
+</html>
+
