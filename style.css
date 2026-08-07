@@ -1,19 +1,18 @@
 :root {
-    /* Paleta Rosa Claro / Pastel */
-    --bg-color: #fdf2f8;          /* Rosa pastel bem suave para o fundo principal */
-    --surface-color: #ffffff;     /* Branco para os cards e caixas de texto */
-    --surface-card: #fce7f3;      /* Rosa claro para variações e cabeçalhos de tabela */
-    --primary-color: #db2777;     /* Rosa vibrante para botões, títulos e ícones */
-    --primary-hover: #be185d;     /* Rosa mais escuro para efeito hover */
-    --accent-color: #9d174d;      /* Tom de rosa seco / vinho para destaques */
-    --text-color: #500724;       /* Tom bem escuro de rosa/vinho para leitura perfeita */
-    --text-muted: #831843;       /* Texto secundário em tom rosado elegante */
+    /* Paleta Rosa Claro & Pastel */
+    --bg-color: #fdf2f8;          /* Rosa pastel bem suave para o fundo */
+    --surface-color: #ffffff;     /* Branco para o fundo dos cards */
+    --surface-card: #fce7f3;      /* Rosa claro para áreas de destaque */
+    --primary-color: #db2777;     /* Rosa vibrante para títulos e botões */
+    --primary-hover: #be185d;     /* Cor para o efeito hover */
+    --accent-color: #9d174d;      /* Tom vinho/rosa seco para detalhes */
+    --text-color: #500724;       /* Tom escuro para leitura confortável */
+    --text-muted: #831843;       /* Texto secundário rosado */
     --border-color: #fbcfe8;      /* Bordas delicadas em rosa claro */
-    --radius: 12px;
+    --radius: 16px;
     --transition: all 0.3s ease;
 }
 
-/* Modo Rosa mais Intenso (Alternativo) */
 [data-theme="light"] {
     --bg-color: #fce7f3;
     --surface-color: #fff0f6;
@@ -32,35 +31,6 @@
     box-sizing: border-box;
 }
 
-
-.tag-red { background: rgba(239, 68, 68, 0.15); color: #f87171; }
-.tag-green { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
-.tag-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-.tag-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-
-/* Footer */
-footer {
-    background-color: var(--surface-color);
-    border-top: 1px solid var(--border-color);
-    padding: 3rem 2rem;
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-/* Responsive Mobile Adjustments */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    .nav-links {
-        display: none;
-    }
-    .grid-2, .grid-3 {
-        grid-template-columns: 1fr;
-    }
-}
-
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
@@ -69,7 +39,7 @@ body {
     transition: var(--transition);
 }
 
-/* Header & Navigation */
+/* Header & Navegação */
 header {
     position: sticky;
     top: 0;
@@ -91,7 +61,7 @@ header {
 
 .logo {
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -118,5 +88,6 @@ header {
 
 .theme-toggle {
     background: var(--surface-color);
-    border: 1px solid var(--border-color
+    border: 1px solid var(--border-color);
+    color: var(--primary
 }
