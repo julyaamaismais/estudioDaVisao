@@ -19,5 +19,21 @@ document.addEventListener("DOMContentLoaded,() =>{
     const ativas = document.body.classList.contains("alto-contrastes");
     btnContrast.setAttibute("aria-pressed",ativo);
 
-    )
-}
+    )};
+
+    //função aumentar texto
+
+    btnAumentar.addEventListener("click",()=>{
+        if(tamanhoAtualFonte <150){
+            tamanhoAtualFonte += 10;
+            document.documentElement.style.fontSize
+             `${tamanhoAtualFonte}%`;
+        }
+    });
+      //função diminuir texto;
+      btnDiminuir.addEventListener("click", ()=>{
+        if(tamanhoAtualFonte > 90){
+            tamanhoAtualFonte -=10;
+            document.documentElement.style.fontSize = `${tamanhoAtualFonte}%`;
+        }
+      })
