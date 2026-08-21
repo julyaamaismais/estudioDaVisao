@@ -610,22 +610,33 @@ button {
   border-radius: 4px;
 }
 
-/* --- REGRAS DE ALTO CONTRASTE --- */
-/* Força todos os elementos dentro do body a mudarem de cor */
+:root {
+  --tamanho-fonte: 100%;
+}
+
+html {
+  font-size: var(--tamanho-fonte);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+/* IMPORTANTE: Use unidades 'rem' no seu CSS em vez de 'px' */
+h1 { font-size: 2rem; }
+p { font-size: 1rem; }
+
+/* Estilos de Alto Contraste */
 body.alto-contraste,
 body.alto-contraste * {
   background-color: #000000 !important;
-  color: #ffff00 !important; /* Texto em amarelo */
+  color: #ffff00 !important;
   border-color: #ffffff !important;
 }
 
 body.alto-contraste a {
-  color: #00ffff !important; /* Links em ciano */
-  text-decoration: underline !important;
-}
-
-body.alto-contraste button {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  font-weight: bold;
+  color: #00ffff !important;
 }

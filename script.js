@@ -5,43 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let tamanhoAtualFonte = 100;
 
-  // Lógica do Alto Contraste
-  const alternarContraste = (ativar) => {
-    document.body.classList.toggle("alto-contraste", ativar);
-    if (btnContraste) {
-      btnContraste.setAttribute("aria-pressed", ativar);
-    }
-    localStorage.setItem("altoContraste", ativar);
-  };
-
-  // Mantém o estado ativo ao recarregar a página
-  const contrasteSalvo = localStorage.getItem("altoContraste") === "true";
-  if (contrasteSalvo) {
-    alternarContraste(true);
-  }
-
+  // Alternar Contraste
   if (btnContraste) {
     btnContraste.addEventListener("click", () => {
-      const estaAtivo = document.body.classList.contains("alto-contraste");
-      alternarContraste(!estaAtivo);
+      document.body.classList.toggle("alto-contraste");
     });
   }
 
-  // Lógica de Redimensionamento do Texto
+  // Aumentar Fonte
   if (btnAumentar) {
     btnAumentar.addEventListener("click", () => {
       if (tamanhoAtualFonte < 150) {
         tamanhoAtualFonte += 10;
-        document.documentElement.style.fontSize = `${tamanhoAtualFonte}%`;
+        document.documentElement.style.setProperty('--tamanho-fonte', `${tamanhoAtualFonte}%`);
       }
     });
   }
 
+  // Diminuir Fonte
   if (btnDiminuir) {
     btnDiminuir.addEventListener("click", () => {
-      if (tamanhoAtualFonte > 90) {
+      if (tamanhoAtualFonte > 80) {
         tamanhoAtualFonte -= 10;
-        document.documentElement.style.fontSize = `${tamanhoAtualFonte}%`;
+        document.documentElement.style.setProperty('--tamanho-fonte', `${tamanhoAtualFonte}%`);
       }
     });
   }
