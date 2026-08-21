@@ -592,18 +592,33 @@ tr:last-child td {
     border-bottom: none;
 }
 
-tr:hover td {
-    background-color
+/* Estilos padrões do site */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #333333;
+  transition: background-color 0.2s, color 0.2s;
 }
-/* Regra global para aplicar o alto contraste em todos os elementos */
+
+button {
+  padding: 8px 14px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* --- REGRAS DE ALTO CONTRASTE --- */
+/* Força todos os elementos dentro do body a mudarem de cor */
 body.alto-contraste,
 body.alto-contraste * {
   background-color: #000000 !important;
-  color: #ffff00 !important; /* Texto em amarelo de alta visibilidade */
+  color: #ffff00 !important; /* Texto em amarelo */
   border-color: #ffffff !important;
 }
 
-/* Ajuste de links e botões para o modo contraste */
 body.alto-contraste a {
   color: #00ffff !important; /* Links em ciano */
   text-decoration: underline !important;
@@ -612,4 +627,5 @@ body.alto-contraste a {
 body.alto-contraste button {
   background-color: #ffffff !important;
   color: #000000 !important;
+  font-weight: bold;
 }
