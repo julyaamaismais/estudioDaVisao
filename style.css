@@ -595,3 +595,21 @@ tr:last-child td {
 tr:hover td {
     background-color
 }
+/* Regra global para aplicar o alto contraste em todos os elementos */
+body.alto-contraste,
+body.alto-contraste * {
+  background-color: #000000 !important;
+  color: #ffff00 !important; /* Texto em amarelo de alta visibilidade */
+  border-color: #ffffff !important;
+}
+
+/* Ajuste de links e botões para o modo contraste */
+body.alto-contraste a {
+  color: #00ffff !important; /* Links em ciano */
+  text-decoration: underline !important;
+}
+
+body.alto-contraste button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
